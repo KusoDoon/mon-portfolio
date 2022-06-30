@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      .font-italic {
+        font-family: 'Source Code Pro', monospace;
+      }
+
+      .font-regular {
+        font-family: 'Roboto Mono', monospace;
+      }
+      body {
+        margin: 0;
+        -webkit-font-smoonthing: antialiased;
+      }
+      .absolute {
+        position: absolute;
+      }
+
+      .text-white {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div
+        class="absolute text-white text-center font-italic"
+        style="top: 50%; transform: translate(-50%, -50%); left: 50%"
+      >
+        <h1 class="text-1xl font-regular uppercase tracking-wide">
+          BRANDON DESCAMPS
+        </h1>
+        <p class="text-3xl">J'AI CRÉE CE PROJET AVEC THREE.JS</p>
+
+        <p>
+          <a
+            a
+            href="https://deft-genie-2e6580.netlify.app/"
+            class="text-1xl font-regular border px-4 py-2 rounded-lg hover:bg-white hover:text-gray-800 inline-block"
+          >
+            Autre Projet
+          </a>
+        </p>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
