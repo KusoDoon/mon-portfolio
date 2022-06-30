@@ -4,7 +4,6 @@ import * as dat from 'dat.gui';
 console.log(OrbitControls);
 import gsap from 'gsap';
 
-const gui = new dat.GUI();
 const world = {
   plane: {
     width: 200,
@@ -13,10 +12,6 @@ const world = {
     heightSegments: 50,
   },
 };
-gui.add(world.plane, 'height', 1, 400).onChange(generatePlane);
-gui.add(world.plane, 'width', 1, 400).onChange(generatePlane);
-gui.add(world.plane, 'widthSegments', 1, 50).onChange(generatePlane);
-gui.add(world.plane, 'heightSegments', 1, 50).onChange(generatePlane);
 
 function generatePlane() {
   planeMesh.geometry.dispose();
